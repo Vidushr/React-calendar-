@@ -20,8 +20,11 @@ var React = require('react');
         this.setState({ month: month });
     },
 
-    select: function(day) {
+    select: function(day,e) {
+        console.log('e?',e)
+        console.log('firing select:', day)
         this.props.selected = day.date;
+        console.log('props select:', this.props.selected)
         this.forceUpdate();
     },
 

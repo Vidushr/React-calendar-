@@ -30,7 +30,7 @@ var React = require('react');
             <div className="header">
                 <i className="fa fa-angle-left" aria-hidden="true" onClick={this.previous}></i>
                 {this.renderMonthLabel()}
-                <i className="fa fa-angle-right" aria-hidden="true" onClick={this.next}></i>
+                <i className="fa fa-angle-right" onClick={this.next}></i>
             </div>
             <DayNames />
             {this.renderWeeks()}

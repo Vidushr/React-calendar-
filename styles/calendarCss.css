@@ -1,5 +1,3 @@
-/*var less = require('less');*/
-
 .vertical-centre (@height) {
     height:@height;
     line-height:@height !important;

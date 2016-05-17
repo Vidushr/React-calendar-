@@ -1,4 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var App = require('./App.js');
-ReactDOM.render(<App/>, document.body);
+var CalendarReact = require('./CalendarReact');
+var Moment = require ('moment')
+
+//setTimeout(function(){
+ ReactDOM.render(<CalendarReact selected={Moment().startOf("day")} />, document.body)//},100);
+
+
+
